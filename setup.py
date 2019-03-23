@@ -133,8 +133,7 @@ def create_builder():
                                 'rabbitmq-c']))
 
                     os.chdir(LRMQDIST())
-
-                    os.system('cmake CMakeLists.txt')
+                    os.system('cmake .')
                 finally:
                     os.environ.update(restore)
             finally:
